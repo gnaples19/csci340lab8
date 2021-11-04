@@ -150,3 +150,4 @@ C:\Users\gnapl\source\repos\csci340lab8\ContosoUniversity\obj\Debug\net5.0\Razor
 C:\Users\gnapl\source\repos\csci340lab8\ContosoUniversity\obj\Debug\net5.0\Razor\Pages\Students\Edit.cshtml.g.cs
 C:\Users\gnapl\source\repos\csci340lab8\ContosoUniversity\obj\Debug\net5.0\Razor\Pages\Students\Index.cshtml.g.cs
 C:\Users\gnapl\source\repos\csci340lab8\ContosoUniversity\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\gnapl\source\repos\csci340lab8\ContosoUniversity\obj\Debug\net5.0\Razor\Pages\About.cshtml.g.cs
