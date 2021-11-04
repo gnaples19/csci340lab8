@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HendrixCollege.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20211104051521_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20211104063351_InitalCreate")]
+    partial class InitalCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,21 @@ namespace HendrixCollege.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("CourseInstructor", b =>
+                {
+                    b.Property<int>("CoursesCourseID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InstructorsID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CoursesCourseID", "InstructorsID");
+
+                    b.HasIndex("InstructorsID");
+
+                    b.ToTable("CourseInstructor");
+                });
 
             modelBuilder.Entity("HendrixCollege.Models.Course", b =>
                 {
@@ -52,6 +67,11 @@ namespace HendrixCollege.Migrations
 
                     b.Property<decimal>("Budget")
                         .HasColumnType("money");
+
+                    b.Property<byte[]>("ConcurrencyToken")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
 
                     b.Property<int?>("InstructorID")
                         .HasColumnType("int");
@@ -142,6 +162,9 @@ namespace HendrixCollege.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("EnrollmentDate")
                         .HasColumnType("datetime2");
 
@@ -163,17 +186,17 @@ namespace HendrixCollege.Migrations
 
             modelBuilder.Entity("CourseInstructor", b =>
                 {
-                    b.Property<int>("CoursesCourseID")
-                        .HasColumnType("int");
+                    b.HasOne("HendrixCollege.Models.Course", null)
+                        .WithMany()
+                        .HasForeignKey("CoursesCourseID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Property<int>("InstructorsID")
-                        .HasColumnType("int");
-
-                    b.HasKey("CoursesCourseID", "InstructorsID");
-
-                    b.HasIndex("InstructorsID");
-
-                    b.ToTable("CourseInstructor");
+                    b.HasOne("HendrixCollege.Models.Instructor", null)
+                        .WithMany()
+                        .HasForeignKey("InstructorsID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("HendrixCollege.Models.Course", b =>
@@ -224,21 +247,6 @@ namespace HendrixCollege.Migrations
                         .IsRequired();
 
                     b.Navigation("Instructor");
-                });
-
-            modelBuilder.Entity("CourseInstructor", b =>
-                {
-                    b.HasOne("HendrixCollege.Models.Course", null)
-                        .WithMany()
-                        .HasForeignKey("CoursesCourseID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HendrixCollege.Models.Instructor", null)
-                        .WithMany()
-                        .HasForeignKey("InstructorsID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("HendrixCollege.Models.Course", b =>
