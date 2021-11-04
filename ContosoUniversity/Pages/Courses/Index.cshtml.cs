@@ -1,16 +1,16 @@
-﻿using ContosoUniversity.Models;
+﻿using HendrixCollege.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Courses
+namespace HendrixCollege.Pages.Courses
 {
     public class IndexModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContext _context;
+        private readonly HendrixCollege.Data.SchoolContext _context;
 
-        public IndexModel(ContosoUniversity.Data.SchoolContext context)
+        public IndexModel(HendrixCollege.Data.SchoolContext context)
         {
             _context = context;
         }

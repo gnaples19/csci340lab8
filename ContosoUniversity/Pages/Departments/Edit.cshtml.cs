@@ -1,5 +1,5 @@
-﻿using ContosoUniversity.Data;
-using ContosoUniversity.Models;
+﻿using HendrixCollege.Data;
+using HendrixCollege.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -7,13 +7,13 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Departments
+namespace HendrixCollege.Pages.Departments
 {
     public class EditModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContext _context;
+        private readonly HendrixCollege.Data.SchoolContext _context;
 
-        public EditModel(ContosoUniversity.Data.SchoolContext context)
+        public EditModel(HendrixCollege.Data.SchoolContext context)
         {
             _context = context;
         }

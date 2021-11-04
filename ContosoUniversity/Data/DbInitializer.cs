@@ -1,9 +1,9 @@
-﻿using ContosoUniversity.Models;
+﻿using HendrixCollege.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ContosoUniversity.Data
+namespace HendrixCollege.Data
 {
     public static class DbInitializer
     {

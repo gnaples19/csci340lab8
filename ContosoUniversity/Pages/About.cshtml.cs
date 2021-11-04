@@ -1,13 +1,13 @@
-﻿using ContosoUniversity.Models.SchoolViewModels;
-using ContosoUniversity.Data;
+﻿using HendrixCollege.Models.SchoolViewModels;
+using HendrixCollege.Data;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ContosoUniversity.Models;
+using HendrixCollege.Models;
 
-namespace ContosoUniversity.Pages
+namespace HendrixCollege.Pages
 {
     public class AboutModel : PageModel
     {

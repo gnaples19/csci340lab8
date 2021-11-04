@@ -1,4 +1,4 @@
-﻿namespace ContosoUniversity
+﻿namespace HendrixCollege
 {
     public static class Utility
     {

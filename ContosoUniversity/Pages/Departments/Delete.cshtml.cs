@@ -1,16 +1,16 @@
-﻿using ContosoUniversity.Models;
+﻿using HendrixCollege.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Departments
+namespace HendrixCollege.Pages.Departments
 {
     public class DeleteModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContext _context;
+        private readonly HendrixCollege.Data.SchoolContext _context;
 
-        public DeleteModel(ContosoUniversity.Data.SchoolContext context)
+        public DeleteModel(HendrixCollege.Data.SchoolContext context)
         {
             _context = context;
         }

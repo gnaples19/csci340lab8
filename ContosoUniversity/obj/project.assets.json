@@ -7184,9 +7184,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gnapl\\source\\repos\\csci340lab8\\ContosoUniversity\\ContosoUniversity.csproj",
-      "projectName": "ContosoUniversity",
-      "projectPath": "C:\\Users\\gnapl\\source\\repos\\csci340lab8\\ContosoUniversity\\ContosoUniversity.csproj",
+      "projectUniqueName": "C:\\Users\\gnapl\\source\\repos\\csci340lab8\\ContosoUniversity\\HendrixCollege.csproj",
+      "projectName": "HendrixCollege",
+      "projectPath": "C:\\Users\\gnapl\\source\\repos\\csci340lab8\\ContosoUniversity\\HendrixCollege.csproj",
       "packagesPath": "C:\\Users\\gnapl\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\gnapl\\source\\repos\\csci340lab8\\ContosoUniversity\\obj\\",
       "projectStyle": "PackageReference",

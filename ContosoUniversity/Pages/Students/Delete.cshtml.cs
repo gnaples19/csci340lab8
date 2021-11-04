@@ -1,4 +1,4 @@
-﻿using ContosoUniversity.Models;
+﻿using HendrixCollege.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -6,14 +6,14 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace ContosoUniversity.Pages.Students
+namespace HendrixCollege.Pages.Students
 {
     public class DeleteModel : PageModel
     {
-        private readonly ContosoUniversity.Data.SchoolContext _context;
+        private readonly HendrixCollege.Data.SchoolContext _context;
         private readonly ILogger<DeleteModel> _logger;
 
-        public DeleteModel(ContosoUniversity.Data.SchoolContext context,
+        public DeleteModel(HendrixCollege.Data.SchoolContext context,
                            ILogger<DeleteModel> logger)
         {
             _context = context;

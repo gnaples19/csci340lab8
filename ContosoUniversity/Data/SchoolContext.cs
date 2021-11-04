@@ -1,7 +1,7 @@
-﻿using ContosoUniversity.Models;
+﻿using HendrixCollege.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ContosoUniversity.Data
+namespace HendrixCollege.Data
 {
     public class SchoolContext : DbContext
     {

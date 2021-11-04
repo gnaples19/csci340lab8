@@ -1,4 +1,4 @@
-﻿namespace ContosoUniversity.Models.SchoolViewModels
+﻿namespace HendrixCollege.Models.SchoolViewModels
 {
     public class AssignedCourseData
     {

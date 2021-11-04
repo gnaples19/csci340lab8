@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Data;
+using HendrixCollege.Data;
 
-namespace ContosoUniversity
+namespace HendrixCollege
 {
     public class Startup
     {
